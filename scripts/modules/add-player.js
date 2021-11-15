@@ -4,28 +4,16 @@ export function inyectPlayer(name) {
     <p> ${name} </p>
     `
     list.innerHTML += newItem
-    console.log(typeof(playerList));
 }
 
 var playerList = []
 
 export function addPlayer() {
     let playerName = document.getElementById('player-input').value
-    playerList += [playerName]
+    playerList.push(playerName)
     inyectPlayer(playerName)
     return playerList
 }
-
-// export function addPlayer() {
-//     let playerName = document.getElementById('player-input').value
-//     if ( playerList == null) {
-//         const playerList = []
-//         return playerList
-//     }
-//     playerList += playerName
-//     inyectPlayer(playerName)
-//     return playerList
-// }
 
 // export function addPlayer() {
 //     let playerName = document.getElementById('player-input').value
