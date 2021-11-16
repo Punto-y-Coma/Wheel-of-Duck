@@ -3,9 +3,14 @@ import { repeatName } from "./name-no-repeat.js"
 export function inyectPlayer(name) {
     let list = document.getElementById('player-list')
     var newItem = `
-    <p> ${name} </p>
+    <div id="${name}">
+        <p> ${name} </p>
+        <button id="btn-delete-player"> X </button>
+        <button id="btn-modify-player"> * </button>
+    </div>
     `
     list.innerHTML += newItem
+    
 }
 
 var playerList = []
