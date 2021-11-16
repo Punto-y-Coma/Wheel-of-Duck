@@ -1,3 +1,5 @@
+import { noRepeatName } from "./name-no-repeat.js"
+
 export function inyectPlayer(name) {
     let list = document.getElementById('player-list')
     var newItem = `
@@ -10,10 +12,11 @@ var playerList = []
 
 export function addPlayer() {
     let playerName = document.getElementById('player-input').value
-    playerList.push(playerName)
-    inyectPlayer(playerName)
+    if(!noRepeatName(playerName, playerList)){
+        playerList.push(playerName)
+        inyectPlayer(playerName)
+    }
     let cleanInput = document.getElementById("player-input").value = ""
-    return playerList
 }
 
 // export function addPlayer() {
