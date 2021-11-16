@@ -12,6 +12,7 @@ export function addPlayer() {
     let playerName = document.getElementById('player-input').value
     playerList.push(playerName)
     inyectPlayer(playerName)
+    let cleanInput = document.getElementById("player-input").value = ""
     return playerList
 }
 
