@@ -1,4 +1,4 @@
-import { noRepeatName } from "./name-no-repeat.js"
+import { repeatName } from "./name-no-repeat.js"
 
 export function inyectPlayer(name) {
     let list = document.getElementById('player-list')
@@ -12,7 +12,7 @@ var playerList = []
 
 export function addPlayer() {
     let playerName = document.getElementById('player-input').value
-    if(!noRepeatName(playerName, playerList)){
+    if(!repeatName(playerName, playerList)){
         playerList.push(playerName)
         inyectPlayer(playerName)
     }
