@@ -8,7 +8,7 @@ export function inyectPlayer(name) {
         <button id="btn-delete-player"> X </button>
         <button id="btn-modify-player"> * </button>
     </div>
-    `
+    
     list.innerHTML += newItem
     
 }
