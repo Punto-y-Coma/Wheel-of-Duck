@@ -7,5 +7,5 @@ export function repeatName(name, list) {
     return false
 }
 
-// si los valores de checkname coinciden => la primera condicion del if se cumple (diferente de null, es decir, se cumple) 
+// si los valores de checkname coinciden => la primera condicion del if se cumple [diferente de null (diferente de no coincidir = coinciden], es decir, se cumple) 
 //si checkname es null no hay duplicado
