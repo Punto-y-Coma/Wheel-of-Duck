@@ -1,3 +1,4 @@
-export function carrouselAnimation() {
+export function carrouselAnimation() 
+{
     console.log('test')
 }
