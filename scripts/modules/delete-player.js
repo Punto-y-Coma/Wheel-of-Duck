@@ -1,7 +1,12 @@
-export function deletePlayer(name) {
+export function deletePlayer() {
     
-    let deletedPlayer = document.getElementById(name.parentNode.id)
-    deletedPlayer.remove()
+    console.log('hola');
+
+    /*let deletedPlayer = document.getElementById(name.parentNode);
+
+    console.log(deletedPlayer.id);
+
+    deletedPlayer.remove();*/
  
 }
 

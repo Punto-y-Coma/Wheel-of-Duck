@@ -7,7 +7,7 @@ export function inyectPlayer(name) {
         <p> ${name} </p>
         <button id="btn-delete-player"> X </button>
         <button id="btn-modify-player"> * </button>
-    </div>
+    </div>`
     
     list.innerHTML += newItem
     
@@ -15,11 +15,14 @@ export function inyectPlayer(name) {
 
 var playerList = []
 
+
 export function addPlayer() {
-    let playerName = document.getElementById('player-input').value
+    var playerName = document.getElementById('player-input').value
+    var players = document.getElementById('player-list')
     if(!repeatName(playerName, playerList)){
         playerList.push(playerName)
         inyectPlayer(playerName)
+        location.reload(players)
     }
     let cleanInput = document.getElementById("player-input").value = ""
 }
