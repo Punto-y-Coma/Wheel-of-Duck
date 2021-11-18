@@ -3,7 +3,7 @@
     height: 1%;
     padding: 1.3em 0em;
     background-color: #007f01;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: flex;
     justify-content: center;

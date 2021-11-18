@@ -3,15 +3,17 @@
     background-repeat: repeat;
     background-position: center center;
     margin-top: 2em;
+    margin-bottom: 2em;
     height: 35%;
     width: 100%;
     max-height: 360px;
     min-height: 320px;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 0;
+    /* position: absolute;
+    z-index: 0; */
+
 }
 
 .duck_player {
@@ -58,10 +60,10 @@
     background-image: url(../assets/game-wave.png);
     background-repeat: repeat-x;
     position: absolute;
-    bottom: 0;
     height: 50%;
     width: 100%;
-    z-index: 2;
+    bottom: 0;
+    /*z-index: 2;*/
 }
 
 @keyframes cambio {

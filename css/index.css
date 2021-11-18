@@ -1,6 +1,9 @@
 @import "./header.css";
+@import "./main.css";
 @import "./footer.css";
+@import "./instructions.css";
 @import "./carrousell.css";
+@import "./players-ranking.css";
 
 
 /* HTML5 display-role reset */
