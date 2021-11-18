@@ -5,4 +5,14 @@
     background-color: #007f01;
     position: absolute;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-weight: bold ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
 }
