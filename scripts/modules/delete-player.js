@@ -1,6 +1,10 @@
-export function deletePlayer() {
+import { addPlayer } from "./add-player.js";
+
+export function deletePlayer(player) {
     
-    console.log('hola');
+    console.log('pulsé un boton de borrar');
+
+    /* console.log(playerName); */
 
     /*let deletedPlayer = document.getElementById(name.parentNode);
 
@@ -9,6 +13,7 @@ export function deletePlayer() {
     deletedPlayer.remove();*/
  
 }
+
 
 //función para eliminar diferentes jugadores
 

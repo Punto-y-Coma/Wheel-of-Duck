@@ -1,3 +1,4 @@
+import { deletePlayer } from "./delete-player.js";
 import { repeatName } from "./name-no-repeat.js"
 
 export function inyectPlayer(name) {
@@ -5,16 +6,28 @@ export function inyectPlayer(name) {
     var newItem = `
     <div id="${name}">
         <p> ${name} </p>
-        <button id="btn-delete-player"> X </button>
-        <button id="btn-modify-player"> * </button>
+        <button id="btn-delete-${name}"> X </button>
+        <button id="btn-modify-${name}-"> * </button>
     </div>`
     
+
     list.innerHTML += newItem
+    eventToDelete(name);
+    
     
 }
 
-var playerList = []
+export function eventToDelete(naemPlayer)
+{
+    const delBtn = document.getElementById(`btn-delete-${naemPlayer}`);
+    delBtn.addEventListener('click', () => {
+        deletePlayer(naemPlayer)
+    });
+}
 
+
+
+var playerList = []
 
 export function addPlayer() {
     var playerName = document.getElementById('player-input').value
@@ -22,7 +35,7 @@ export function addPlayer() {
     if(!repeatName(playerName, playerList)){
         playerList.push(playerName)
         inyectPlayer(playerName)
-        location.reload(players)
+        
     }
     let cleanInput = document.getElementById("player-input").value = ""
 }
