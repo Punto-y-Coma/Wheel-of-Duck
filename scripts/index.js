@@ -1,4 +1,4 @@
-import { addPlayer, eventToDelete, inyectPlayer } from "./modules/add-player.js";
+import { addPlayer, eventToAssignFunctions, inyectPlayer } from "./modules/add-player.js";
 import { carrouselAnimation } from "./modules/animations.js";
 import { repeatName } from "./modules/name-no-repeat.js";
 import { deletePlayer } from "./modules/delete-player.js";

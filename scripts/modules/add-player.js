@@ -1,4 +1,5 @@
 import { deletePlayer } from "./delete-player.js";
+import { modifyPlayer } from "./modify-player.js";
 import { repeatName } from "./name-no-repeat.js"
 
 var playerList = []
@@ -9,7 +10,7 @@ export function addPlayer() {
     if(!repeatName(playerName, playerList)){
         playerList.push(playerName)
         inyectPlayer(playerName)
-        eventToDelete()
+        eventToAssignFunctions()
     }
     let cleanInput = document.getElementById("player-input").value = ""
 }
@@ -26,7 +27,7 @@ export function inyectPlayer(name) {
     list.innerHTML += newItem
 }
 
-export function eventToDelete()
+export function eventToAssignFunctions()
 {
     const btnsDelete = document.querySelectorAll('.btn-delete');
     const btnsModify = document.querySelectorAll('.btn-modify');
