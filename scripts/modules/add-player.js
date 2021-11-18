@@ -6,26 +6,23 @@ export function inyectPlayer(name) {
     var newItem = `
     <div id="${name}">
         <p> ${name} </p>
-        <button id="btn-delete-${name}"> X </button>
+        <button class="btn-delete"> X </button>
         <button id="btn-modify-${name}-"> * </button>
     </div>`
-    
 
     list.innerHTML += newItem
-    eventToDelete(name);
-    
-    
 }
 
-export function eventToDelete(naemPlayer)
+export function eventToDelete()
 {
-    const delBtn = document.getElementById(`btn-delete-${naemPlayer}`);
-    delBtn.addEventListener('click', () => {
-        deletePlayer(naemPlayer)
-    });
+    const btnsDelete = document.querySelectorAll('.btn-delete');
+    
+    btnsDelete.forEach( btn => {
+        btn.addEventListener('click', (e) => {
+            deletePlayer(e.target.parentNode.id);
+        })
+    })
 }
-
-
 
 var playerList = []
 
@@ -35,7 +32,7 @@ export function addPlayer() {
     if(!repeatName(playerName, playerList)){
         playerList.push(playerName)
         inyectPlayer(playerName)
-        
+        eventToDelete()
     }
     let cleanInput = document.getElementById("player-input").value = ""
 }
