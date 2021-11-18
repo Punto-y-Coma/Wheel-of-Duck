@@ -1,11 +1,14 @@
 export function inyectDuckPlayer(name){
-    let duckList = document.getElementById('duck_player')
-    var newDuck = `                
-        <img src="assets/duck-alive.png" alt="Duck">
-        <p class="player-name">${name}</p>
+    let duckList = document.getElementById('duck_player_id')
+    var newDuck = ` 
+        <div class="boxDuckName">               
+            <img src="assets/duck-alive.png" alt="Duck">
+            <p class="player-name">${name}</p>
+        </div>
     `
+    console.log(duckList)
     duckList.innerHTML += newDuck
-    console.log('patitostest')
+    
 }
 
 /* export function addPlayer() {
