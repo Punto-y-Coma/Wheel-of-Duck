@@ -10,7 +10,7 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     z-index: 0;
 }
 
@@ -28,7 +28,7 @@
     max-height: 125px;
     padding-bottom: 30px;
     z-index: 1;
-    animation: slide 10s infinite linear;
+    animation: slide 5s infinite linear;
    
     
 }
@@ -41,7 +41,7 @@
     background-color: #92D3E9;
     border: 0.1em solid black;
     z-index: 3;
-    animation: slide 10s infinite linear;
+    animation: slide 5s infinite linear;
     
     
 }
@@ -71,15 +71,54 @@
 }
 
 @keyframes slide {
-	0% {margin-right: -100%;}
-	20% {margin-right: -100%;}
+	0% {margin-right: 0%;}
+	5% {margin-right: 0%;}
 	
-	25% {margin-right: -1000%;}
-	45% {margin-right: -1000%;}
+	6% {margin-right: -100%;}
+	11% {margin-right: -100%;}
 	
-	50% {margin-right: -2000%;}
-	70% {margin-right: -2000%;}
+	12% {margin-right: -200%;}
+	17% {margin-right: -200%;}
 	
-	75% {margin-right: -3000%;}
-	100% {margin-right: -3000%;}
+	18% {margin-right: -300%;}
+	23% {margin-right: -300%;}
+
+    24% {margin-right: -400%;}
+	29% {margin-right: -400%;}
+
+    30% {margin-right: -500%;}
+	35% {margin-right: -500%;}
+
+    36% {margin-right: -600%;}
+	41% {margin-right: -600%;}
+
+    42% {margin-right: -800%;}
+	47% {margin-right: -800%;}
+
+    48% {margin-right: -900%;}
+	53% {margin-right: -900%;}
+
+    54% {margin-right: -1000%;}
+	59% {margin-right: -1000%;}
+
+    60% {margin-right: -1100%;}
+	65% {margin-right: -1100%;}
+
+    66% {margin-right: -1200%;}
+	71% {margin-right: -1200%;}
+
+    72% {margin-right: -1300%;}
+	77% {margin-right: -1300%;}
+
+    78% {margin-right: -1400%;}
+	83% {margin-right: -1400%;}
+
+    84% {margin-right: -1500%;}
+	89% {margin-right: -1500%;}
+
+    90% {margin-right: -1600%;}
+	95% {margin-right: -1600%;}
+
+    90% {margin-right: -1700%;}
+	95% {margin-right: -1700%;}
 }
