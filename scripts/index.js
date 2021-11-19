@@ -2,6 +2,7 @@ import { addPlayer, eventToAssignFunctions, inyectPlayer } from "./modules/add-p
 import { carrouselAnimation } from "./modules/animations.js";
 import { repeatName } from "./modules/name-no-repeat.js";
 import { deletePlayer } from "./modules/delete-player.js";
+import {inyectDuckPlayer} from "./modules/carrousell.js";
 
 
 const addBtn = document.getElementById('btn-add-player');

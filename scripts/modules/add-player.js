@@ -1,3 +1,4 @@
+import { inyectDuckPlayer } from "./carrousell.js";
 import { deletePlayer } from "./delete-player.js";
 import { modifyPlayer } from "./modify-player.js";
 import { repeatName } from "./name-no-repeat.js"
@@ -11,6 +12,7 @@ export function addPlayer() {
         playerList.push(playerName)
         inyectPlayer(playerName)
         eventToAssignFunctions()
+        inyectDuckPlayer(playerName)
     }
     let cleanInput = document.getElementById("player-input").value = ""
 }
